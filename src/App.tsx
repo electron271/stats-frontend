@@ -67,47 +67,6 @@ export const LoadGraph: React.FC = () => {
           graph.setNodeAttribute(node, "tag", weight);
         });
 
-        /*
-        // Cull nodes below the 75th percentile.
-        const allNodes = graph.nodes();
-        const tags = allNodes.map((node: string) => graph.getNodeAttribute(node, "tag"));
-        const cutoff = tags.sort((a, b) => a - b)[Math.floor(tags.length * 0.75)];
-        let removedNodes = 0;
-        allNodes.forEach((node: string) => {
-          if (graph.getNodeAttribute(node, "tag") < cutoff) {
-            graph.dropNode(node);
-            removedNodes++;
-          }
-        });
-        const descriptionEl = document.querySelector(".culling");
-        if (descriptionEl) {
-          descriptionEl.innerHTML += `<br/>Removed <b>${removedNodes}/${allNodes.length}</b> nodes. Weight cutoff: <b>${cutoff}</b>`;
-        }
-        console.log(`Nodes culled: ${removedNodes} removed (cutoff: ${cutoff}).`);
-
-        // Cull edges below the 75th percentile based on weight.
-        const edges = graph.edges();
-        const edgeWeights = edges.map((edge: string) => graph.getEdgeAttribute(edge, "weight"));
-        const edgeCutoff = edgeWeights.sort((a, b) => a - b)[Math.floor(edgeWeights.length * 0.75)];
-        let hiddenEdges = 0;
-        edges.forEach((edge: string) => {
-          const weight = graph.getEdgeAttribute(edge, "weight");
-          const shouldHide = weight < edgeCutoff;
-          graph.setEdgeAttribute(edge, "defaultHidden", shouldHide);
-          if (shouldHide) {
-            graph.setEdgeAttribute(edge, "hidden", true);
-            graph.setEdgeAttribute(edge, "culled", true);
-            hiddenEdges++;
-          } else {
-            graph.removeEdgeAttribute(edge, "hidden");
-          }
-        });
-        if (descriptionEl) {
-          descriptionEl.innerHTML += `<br/>Hidden <b>${hiddenEdges}/${edges.length}</b> edges. Weight cutoff: <b>${edgeCutoff}</b>`;
-        }
-        console.log(`Edges culled: ${hiddenEdges} hidden (cutoff: ${edgeCutoff}).`);
-        */
-
         // Initialize node positions 
         graph.forEachNode((node: string) => {
           graph.setNodeAttribute(node, "x", 0);

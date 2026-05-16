@@ -7,7 +7,7 @@ import {
 import { GraphSearch, GraphSearchOption } from "@react-sigma/graph-search";
 import "@react-sigma/core/lib/style.css";
 import "@react-sigma/graph-search/lib/style.css";
-import { FaqPanel, CullingPanel, InfoPanel } from "./Menu";
+import { FaqPanel, InfoPanel } from "./Menu";
 import DarkModeControl from "./DarkModeButton";
 import "../index.css";
 import { MiniMap } from '@react-sigma/minimap';
@@ -75,7 +75,6 @@ export const Complete: FC = memo(() => {
         </div>
         <InfoPanel />
         <FaqPanel />
-        <CullingPanel />
       </ControlsContainer>
       {/* Render FocusOnNode so that it reacts to focusNode changes */}
       <FocusOnNode node={focusNode} move={true} />

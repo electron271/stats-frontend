@@ -64,13 +64,13 @@ const InfoPanel: FC = () => {
       }
     >
       <div className="px-2 text-sm">
-        <b>Welcome to stats.atl.dev!</b><br />
-        <p>This tracks how much different users ping/reply ping each other in the All Things Linux server. The more a user pings another
+        <b>Welcome to stats.grainware.org!</b><br />
+        <p>This tracks how much different users ping/reply ping each other in the GrainWare server. The more a user pings another
         user, the closer they are in the graph and the thicker the line between them.</p><br />
         <br />
-        <b>Created by All Things Linux and Accurate Linux Graphs.</b><br />
-        <p>Backend and source graph files available at <a href="https://stats-backend.atl.dev" className="underline">https://stats-backend.atl.dev</a>.</p><br />
-        <a href="https://stats-backend.atl.dev/privacy" className="underline">Privacy Policy</a>
+        <b>Created by GrainWare and Accurate Linux Graphs.</b><br />
+        <p>Backend and source graph files available at <a href="https://stats-backend.grainware.org" className="underline">https://stats-backend.grainware.org</a>.</p><br />
+        <a href="https://stats-backend.grainware.org/privacy" className="underline">Privacy Policy</a>
       </div>
     </Panel>
   );
@@ -87,36 +87,20 @@ const FaqPanel: FC = () => {
     >
       <div className="px-2 text-sm description">
         <i>Why am I not showing up in the graph?</i><br />
-        If you do not show up in the graph, run <b>s$optin</b>. If you still do not show up, you most likely were culled (details below). Please wait a bit until you have more activity.<br />
+        If you do not show up in the graph, run <b>s$optin</b>. Please wait a bit until you have more activity.<br />
         <br />
         <i>How long has data been collected?</i><br />
-        Data collection started on March 8, 2025.<br />
+        Data collection started on May 16, 2026.<br />
         <br />
         <i>What happened to my data?</i><br />
         If you leave the server, you are automatically opted out and as such your data is removed. This also happens if you opt out manually. (s$optout)<br />
         <br />
         <i>Where is the source code?</i><br />
-        <a href="https://github.com/allthingslinux/stats-backend" className="underline">Backend source code</a><br />
-        <a href="https://github.com/allthingslinux/stats-frontend" className="underline">Frontend source code</a><br />
+        <a href="https://github.com/electron271/stats-backend" className="underline">Backend source code</a><br />
+        <a href="https://github.com/electron271/stats-frontend" className="underline">Frontend source code</a><br />
       </div>
     </Panel>
   );
 };
 
-const CullingPanel: FC = () => {
-  return (
-    <Panel
-      title={
-        <div className="flex items-center m-2 space-x-2">
-          <FaRegTrashAlt className="text-muted" /> <b>Culling</b>
-        </div>
-      }
-    >
-      <div className="px-2 text-sm culling">
-        <b>Want to see all nodes and edges? Open the .gexf file in Gephi or click a node to see all connections.</b>
-      </div>
-    </Panel>
-  );
-};
-
-export { FaqPanel, CullingPanel, InfoPanel };
+export { FaqPanel, InfoPanel };

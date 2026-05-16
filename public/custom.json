@@ -1,52 +1,8 @@
 {
-    "nodes": [
-        {
-            "id": "G5FzWcWuk/+CTiwnnJzNZoN9Boa3X+ULKN0xKojOB6A=",
-            "image": "./Troll-Face.svg"
-        },
-        {
-            "id": "754657845563097108",
-            "image": "./Formuna-Icon.svg"
-        },
-        {
-            "id": "zwk7JdCnDBaR7M1nYZFdbgmltyrsyzu8EUFT3wWdupo=",
-            "image": "./tux.svg"
-        },
-        {
-            "id": "UxalqaE7H4BlVw4AgJB0yk10vWbkGo4It34KZ5Q47dk=",
-            "image": "./tux.svg"
-        },
-        {
-            "id": "Wq1KVst9WPA+UcJEETv5aDN1jCOXFqR19p6jOfvKT2M=",
-            "image": "./tux.svg"
-        },
-        {
-            "id": "T6aSsb4jPu2vQcV9+HiKVuhSyEEAe9xGRz4RZg47ejA=",
-            "image": "./grid.svg"
-        },
-        {
-            "id": "YPzJ4LJTiXoVEbJH7NciMUhDtWZFsksqEn+o42qlJ9o=",
-            "image": "./grid.svg"
-        },
-        {
-            "id": "6M4G5neSfzkq/uD+I60TiblGruXQnH9EQrqzT2lHKTg=",
-            "image": "./a-positron.jpg"
-        },
-        {
-            "id": "cIpoz7hK5dqSjLKRelSix9oYFdFQ1bkbP9yUkcxmWvc=",
-            "image": "./Troll-Face.svg"
-        },
-        {
-            "id": "143183268571774976",
-            "image": "./capybara3.png"
-        },
-        {
-            "id": "3TZoR80yBun3djIHBH4yBYieqztwEr2E5qL9AwlVeGE=",
-            "image": "./lilliana.svg"
-        },
-        {
-            "id": "DuM0QD2zIp6yhb/v1mYxmfgx8yuuhXpTUAPy3eCWgI8=",
-            "image": "./sudo-sandwich-logo.png"
-        }
-    ]
+  "nodes": [
+    {
+      "id": "143183268571774976",
+      "image": "./capybara3.png"
+    }
+  ]
 }
